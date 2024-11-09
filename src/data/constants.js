@@ -113,7 +113,7 @@ export const trainings = [
     img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100072/pwskills_sdbo23.png",
     company: "PwSkills",
     date: "July 2023 - Feb 2024",
-    desc: "During the 8 Month period of tranning (July 2023 - Feb 2024), Sandeep Kumar Mehta has completed the Full Stack web development.",
+    desc: "During the 8-month training period (July 2023 - February 2024), I completed Full Stack Web Development",
     skills: [
       "MERN Stack, React, Node.js, Express.js, MongoDB, Firebase, Git, GitHub, Postman, RESTful APIs, Authentication & Authorization, Deployment",
     ],
@@ -123,8 +123,8 @@ export const trainings = [
     id: 0,
     img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100072/smartinternz_epbv7l.png",
     company: "SmarInternz",
-    date: "May 2024 - Jul 2024",
-    desc: "During the 8 Weeks period of Virtual Internship (July-August 2024), Sandeep Kumar Mehta has completed the following Salesforce Trailhead modules.",
+    date: "July 2024 - August 2024",
+    desc: "During this 8-week virtual internship, I completed a variety of Salesforce Trailhead modules, which helped me develop a strong understanding of cloud computing and customer relationship management (CRM) technologies. I gained hands-on experience with Salesforce’s platform and tools.",
     skills: [
       "Salesforce Fundamentals, Organizational Setup, Relationship & Process Automation, Types of Flows & Security, Apex, Testing & Debugging, VS Code setup & CLI Setup, Lightning Web Components (LWC) & API, Super Badge - Apex Specialist, Super Badge - Process Automation Specialist, Super Badge - Developer super set",
     ],
@@ -189,6 +189,14 @@ export const projects = [
     category: "web app",
     github: "https://github.com/sandeepkrmehta/LMS-MERN-PROJECT",
     webapp: "https://lms-mern-project-hghh.onrender.com/",
+    member: [
+      {
+        name: "Sandeep Mehta",
+        img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100259/HeroImage_xgzogu.jpg",
+        linkedin: "https://www.linkedin.com/in/sandeep-kumar-mehta/",
+        github: "https://github.com/sandeepkrmehta",
+      },
+    ]
   },
   {
     id: 1,
@@ -202,6 +210,14 @@ export const projects = [
     category: "web app",
     github: "https://github.com/sandeepkrmehta/Spotify-clone",
     webapp: "https://github.com/sandeepkrmehta/Spotify-clone",
+    member: [
+      {
+        name: "Sandeep Mehta",
+        img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100259/HeroImage_xgzogu.jpg",
+        linkedin: "https://www.linkedin.com/in/sandeep-kumar-mehta/",
+        github: "https://github.com/sandeepkrmehta",
+      },
+    ]
   },
   {
     id: 0,
@@ -237,7 +253,7 @@ export const projects = [
       {
         name: "Yogesh Verma",
         img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731102720/Yogesh_np4jog.png",
-        linkedin: "https://www.linkedin.com/in/gauhar-adeeb/",
+        linkedin: "",
         github: "",
       },
     ],

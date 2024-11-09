@@ -135,7 +135,7 @@ const Contact = () => {
   const [open, setOpen] = useState(false);
   const form = useRef();
 
-  console.log("Public Key: ", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  // console.log("Public Key: ", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -156,23 +156,37 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-  };  
+  };
 
   return (
     <Container>
       <Wrapper>
-        <Title>Contact</Title>
+        <Title>Get in Touch</Title>
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        {/* <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send message" />
+        </ContactForm> */}
+        <ContactForm ref={form} onSubmit={handleSubmit}>
+          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactInput placeholder="Your Email" name="from_email" required />
+          <ContactInput placeholder="Your Name" name="from_name" required />
+          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInputMessage
+            placeholder="Message"
+            rows="4"
+            name="message"
+            required
+          />
+          <ContactButton type="submit" value="Send Message" />
         </ContactForm>
+
         <Snackbar
           open={open}
           autoHideDuration={6000}

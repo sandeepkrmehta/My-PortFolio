@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 import { Bio } from "../../data/constants.js";
 
 const FooterContainer = styled.div`
@@ -99,17 +99,17 @@ const Footer = () => {
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon href={Bio.linkedin} target="display" rel="noopener noreferrer">
             <LinkedInIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
+            </SocialMediaIcon>
+            <SocialMediaIcon href={Bio.github} target="display" rel="noopener noreferrer">
+            <GitHubIcon />
+           </SocialMediaIcon> 
+          <SocialMediaIcon href={Bio.insta} target="display" rel="noopener noreferrer">
             <InstagramIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="mailto:mehtasandeepkumar0@gmail.com" target="display" rel="noopener noreferrer">
+              <EmailIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; {currentYear} Sandeep Mehta. All rights reserved.</Copyright>
