@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/sandeepkrmehta",
   resume:
-    "https://drive.google.com/drive/folders/1ydjSMSbZ8PtKRIO2O_pF-DlUAmAmIXYl?usp=drive_link",
+    "https://flowcv.com/resume/n5srfnsv53",
   linkedin: "https://www.linkedin.com/in/sandeep-kumar-mehta/",
   twitter: "https://twitter.com/sandeep_mehta",
   insta: "https://www.instagram.com/mr_sandeep__kr/",
