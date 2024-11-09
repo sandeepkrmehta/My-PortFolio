@@ -84,6 +84,8 @@ const Copyright = styled.p`
 `;
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -110,7 +112,7 @@ const Footer = () => {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Sandeep Mehta. All rights reserved.</Copyright>
+        <Copyright>&copy; {currentYear} Sandeep Mehta. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

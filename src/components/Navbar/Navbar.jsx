@@ -191,7 +191,6 @@ const Navbar = ({ toggleTheme, darkMode }) => {
           />
         </MobileIcon>
         <NavItems>
-        <NavLink href="/">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           {/* <NavLink href="#experience">Experience</NavLink> */}

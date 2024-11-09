@@ -109,20 +109,6 @@ export const skills = [
 
 export const trainings = [
   {
-    id: 2,
-    title: "Spotify Clone",
-    date: "Jan 2024 - Feb 2024",
-    description:
-      "The Spotify Clone is a replica of the Spotify music application, offering a similar user experience. It allows users to stream music, create playlists, and discover new tracks. Designed to emulate Spotify's features and interface, this clone provides a familiar and enjoyable music streaming experience.",
-    image:
-      "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731109128/Spotify_rl6t3j.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    category: "web app",
-    github: "https://github.com/sandeepkrmehta/Spotify-clone",
-    webapp: "https://github.com/sandeepkrmehta/Spotify-clone",
-  },
-
-  {
     id: 1,
     img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100072/pwskills_sdbo23.png",
     company: "PwSkills",
@@ -161,7 +147,7 @@ export const experiences = [
 
 export const education = [
   {
-    id: 0,
+    id: 2,
     img: "https://cdn.universitykart.com//Content/upload/admin/gi251tvn.qho.png",
     school: "Bansal College Of Enginnering, Bhopal",
     date: "Jun 2021 - Jul 2025",
@@ -179,7 +165,7 @@ export const education = [
     degree: "ISC(XII), Science with Maths",
   },
   {
-    id: 2,
+    id: 0,
     img: "https://pbs.twimg.com/profile_images/1645719908247031808/GQDKrxnF_400x400.jpg",
     school: "U.H.S, Nirmali Basantpur Supaul",
     date: "Apr 2018 - Apr 2019",
@@ -190,6 +176,7 @@ export const education = [
 ];
 
 export const projects = [
+  
   {
     id: 2,
     title: "LMS PORTAL",
@@ -202,6 +189,19 @@ export const projects = [
     category: "web app",
     github: "https://github.com/sandeepkrmehta/LMS-MERN-PROJECT",
     webapp: "https://lms-mern-project-hghh.onrender.com/",
+  },
+  {
+    id: 1,
+    title: "Spotify Clone",
+    date: "Jan 2024 - Feb 2024",
+    description:
+      "The Spotify Clone is a replica of the Spotify music application, offering a similar user experience. It allows users to stream music, create playlists, and discover new tracks. Designed to emulate Spotify's features and interface, this clone provides a familiar and enjoyable music streaming experience.",
+    image:
+      "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731109128/Spotify_rl6t3j.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "web app",
+    github: "https://github.com/sandeepkrmehta/Spotify-clone",
+    webapp: "https://github.com/sandeepkrmehta/Spotify-clone",
   },
   {
     id: 0,

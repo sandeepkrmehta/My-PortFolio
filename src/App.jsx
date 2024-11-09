@@ -11,6 +11,7 @@ import {
   Projects,
   Skills,
   Training,
+  // Experience,
 } from "./components/index.js";
 import { useState } from "react";
 
