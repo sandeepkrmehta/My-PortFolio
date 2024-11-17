@@ -135,8 +135,8 @@ const Contact = () => {
   const [open, setOpen] = useState(false);
   const form = useRef();
 
-  // console.log("Public Key: ", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
+   // Send the initial email
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -156,7 +156,28 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    // Send the confirmation email
+    const senderEmail = form.current.user_email.value; // Assuming the form has an input with name="user_email"
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID, // New template ID for confirmation email
+        {
+          to_email: senderEmail,
+          to_name: form.current.user_name.value, // Assuming the form has an input with name="user_name"
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (confirmationResult) => {
+          console.log('Confirmation email sent:', confirmationResult);
+        },
+        (confirmationError) => {
+          console.log('Error sending confirmation email:', confirmationError.text);
+        }
+      );
   };
+
 
   return (
     <Container>
@@ -165,19 +186,11 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        {/* <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send message" />
-        </ContactForm> */}
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" required />
-          <ContactInput placeholder="Your Name" name="from_name" required />
-          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInput placeholder="Your Email" name="user_email" required />
+          <ContactInput placeholder="Your Name" name="user_name" required />
+          <ContactInput placeholder="Subject" name="from_subject" required />
           <ContactInputMessage
             placeholder="Message"
             rows="4"
