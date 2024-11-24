@@ -178,7 +178,7 @@ export const education = [
 export const projects = [
   
   {
-    id: 2,
+    id: 3,
     title: "LMS PORTAL",
     date: "Sep 2023 - Oct 2023",
     description:
@@ -198,6 +198,29 @@ export const projects = [
       },
     ]
   },
+
+  {
+    id: 2,
+    title: "Infosten",
+    date: "Nov 2024 - Nov 2024",
+    description:
+      "Insoften is an application designed for a social forum to simplify the registration process for volunteers joining charitable teaching events by selecting convenient locations.",
+    image:
+      "https://res.cloudinary.com/dbgvjxepr/image/upload/v1732457265/Screenshot_2024-11-24_181740_oyrq1i.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "web app",
+    github: "https://github.com/sandeepkrmehta/Infosten",
+    webapp: "https://infosten.netlify.app/",
+    member: [
+      {
+        name: "Sandeep Mehta",
+        img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100259/HeroImage_xgzogu.jpg",
+        linkedin: "https://www.linkedin.com/in/sandeep-kumar-mehta/",
+        github: "https://github.com/sandeepkrmehta",
+      },
+    ]
+  },
+
   {
     id: 1,
     title: "Spotify Clone",
