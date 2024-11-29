@@ -109,6 +109,17 @@ export const skills = [
 
 export const trainings = [
   {
+    id: 3,
+    img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1732869925/pyhon_w6iqby.png",
+    company: "Cisco Networking Academy",
+    date: "Aug 2024 - Nov 2024",
+    desc: "During the 3-month training period (Aug 2024 - Nov 2024), I completed Full Stack Web Development",
+    skills: [
+      "Python Programming(Entry Level)",
+    ],
+    doc: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731104189/Certificate_aznubg.jpg",
+  },
+  {
     id: 1,
     img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1731100072/pwskills_sdbo23.png",
     company: "PwSkills",
