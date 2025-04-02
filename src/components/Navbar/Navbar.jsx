@@ -154,7 +154,22 @@ const MobileMenu = styled.div`
   z-index: ${({ open }) => (open ? "1000" : "-1000")};
 `;
 
-const MobileMenuLink = styled(LinkR)`
+// const MobileMenuLink = styled(LinkR)`
+//   color: ${({ theme }) => theme.text_primary};
+//   font-weight: 500;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   text-decoration: none;
+//   :hover {
+//     color: ${({ theme }) => theme.primary};
+//   }
+
+//   &.active {
+//     border-bottom: 2px solid ${({ theme }) => theme.primary};
+//   }
+// `;
+
+const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -168,6 +183,9 @@ const MobileMenuLink = styled(LinkR)`
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 `;
+
+
+
 
 const Navbar = ({ toggleTheme, darkMode }) => {
   const [open, setOpen] = useState(false);
@@ -220,68 +238,114 @@ const Navbar = ({ toggleTheme, darkMode }) => {
       </NavbarContainer>
       {open && (
         
+        // <MobileMenu open={open}>
+        //   <MobileMenuLink
+        //     to="#about"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     About
+        //   </MobileMenuLink>
+        //   <MobileMenuLink
+        //     to="#skills"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     Skills
+        //   </MobileMenuLink>
+        //   {/* <MobileMenuLink
+        //     to="#experience"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     Experience
+        //   </MobileMenuLink> */}
+        //   <MobileMenuLink
+        //     to="#training"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     Training
+        //   </MobileMenuLink>
+        //   <MobileMenuLink
+        //     to="#projects"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     Projects
+        //   </MobileMenuLink>
+        //   <MobileMenuLink
+        //     to="#education"
+        //     onClick={() => {
+        //       setOpen(!open);
+        //     }}
+        //   >
+        //     Education
+        //   </MobileMenuLink>
+        //   <GitHubButton
+        //     style={{
+        //       padding: "10px 16px",
+        //       background: `${theme.primary}`,
+        //       color: "white",
+        //       width: "max-content",
+        //     }}
+        //     href={Bio.github}
+        //     target="_blank"
+        //   >
+        //     Github Profile
+        //   </GitHubButton>
+        // </MobileMenu>
+
         <MobileMenu open={open}>
-          <MobileMenuLink
-            to="#about"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            About
-          </MobileMenuLink>
-          <MobileMenuLink
-            to="#skills"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Skills
-          </MobileMenuLink>
-          {/* <MobileMenuLink
-            to="#experience"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Experience
-          </MobileMenuLink> */}
-          <MobileMenuLink
-            to="#training"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Training
-          </MobileMenuLink>
-          <MobileMenuLink
-            to="#projects"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Projects
-          </MobileMenuLink>
-          <MobileMenuLink
-            to="#education"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            Education
-          </MobileMenuLink>
-          <GitHubButton
-            style={{
-              padding: "10px 16px",
-              background: `${theme.primary}`,
-              color: "white",
-              width: "max-content",
-            }}
-            href={Bio.github}
-            target="_blank"
-          >
-            Github Profile
-          </GitHubButton>
-        </MobileMenu>
+  <MobileMenuLink
+    href="#about"
+    onClick={() => setOpen(!open)}
+  >
+    About
+  </MobileMenuLink>
+  <MobileMenuLink
+    href="#skills"
+    onClick={() => setOpen(!open)}
+  >
+    Skills
+  </MobileMenuLink>
+  <MobileMenuLink
+    href="#training"
+    onClick={() => setOpen(!open)}
+  >
+    Training
+  </MobileMenuLink>
+  <MobileMenuLink
+    href="#projects"
+    onClick={() => setOpen(!open)}
+  >
+    Projects
+  </MobileMenuLink>
+  <MobileMenuLink
+    href="#education"
+    onClick={() => setOpen(!open)}
+  >
+    Education
+  </MobileMenuLink>
+  <GitHubButton
+    style={{
+      padding: "10px 16px",
+      background: `${theme.primary}`,
+      color: "white",
+      width: "max-content",
+    }}
+    href={Bio.github}
+    target="_blank"
+  >
+    Github Profile
+  </GitHubButton>
+</MobileMenu>
+
       )}
     </Nav>
   );

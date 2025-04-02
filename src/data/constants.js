@@ -109,6 +109,18 @@ export const skills = [
 
 export const trainings = [
   {
+    id: 4,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOJ1rVGhxasxZAbEmONulSjeUldKPW5bw-P_1bKQCUNQ5DtGVXHBFmjlhZi98OMfqR4w&usqp=CAU",
+    company: "KodNest",
+    date: "Jan 2025 - Ongoing",
+    desc: "I have started learning at KodNest in jan 2025 for Java/ Python Full Stack development",
+    skills: [
+      "Core Java",
+      "Python",
+    ],
+    doc: "",
+  },
+  {
     id: 3,
     img: "https://res.cloudinary.com/dbgvjxepr/image/upload/v1732869925/pyhon_w6iqby.png",
     company: "Cisco Networking Academy",
@@ -147,11 +159,11 @@ export const experiences = [
   {
     id: 0,
     img: "",
-    role: "",
-    company: "",
-    date: "",
+    role: "Summer Intern",
+    company: "Celebal Technology",
+    date: "03 Jun - 03 Aug 2024",
     desc: "",
-    skills: [],
+    skills: ["React js"],
     doc: "",
   },
 ];
@@ -170,19 +182,10 @@ export const education = [
     id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThaO_CvL1Z9egG2E9PlJRoFS_LFLn8iss5O2rmtXG44-uiKSU0NZPU2Dvngv6-vNj3RTY&usqp=CAU",
     school: "Rajendra Mishra College, Saharsa",
-    date: "Apr 2018 - Feb 2020",
+    date: "Mar 2019 - Mar 2020",
     grade: "66.0%",
     desc: "I completed my class 12 high school education at Rajendra Mishra College, Saharsa, where I studied Science with maths.",
     degree: "ISC(XII), Science with Maths",
-  },
-  {
-    id: 0,
-    img: "https://pbs.twimg.com/profile_images/1645719908247031808/GQDKrxnF_400x400.jpg",
-    school: "U.H.S, Nirmali Basantpur Supaul",
-    date: "Apr 2018 - Apr 2019",
-    grade: "67.4%",
-    desc: "I completed my class 10 education at U.H.S, Nirmali, Supaul, where I studied various subjects including Mathematics, Science, Social Science, English, and Hindi.",
-    degree: "Matriculation",
   },
 ];
 
